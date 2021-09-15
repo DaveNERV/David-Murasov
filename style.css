@@ -4,20 +4,34 @@
     padding-top: 0.1%;
     padding-bottom: 0.1%;
     border-radius: 50px;
+    margin-right:60px; 
+    margin-left:60px;
+    font-size: 24px;
 }
 
 .image1{
     padding-bottom: -1%;
     border-radius: 15px;
     margin-right: 20px;
+    margin-bottom: 5px;
     border: 5px solid #800000;
+    height: 430px;
+    width: 330px;
 }
 
 .image2{
     padding-bottom: -1%;
     border-radius: 15px;
     margin-right: 20px;
+    margin-top: 1%;
     border: 5px solid #800000;
+    height: 245px;
+    width: 330px;
+}
+
+.logo{
+    width: 200px; 
+    height: 50px;
 }
 
 .container{
@@ -57,19 +71,20 @@
 }
 
 table {
-    width: 92%; /* Ширина таблицы */
-    border: 1px solid: red; /* Граница вокруг таблицы */
-    border-spacing: 7px 5px; /* Расстояние между границ */
+    width: 92%;
+    border: 1px solid: red;
+    border-spacing: 7px 5px;
 }
+
 td {
-    background: whitesmoke; /* Цвет фона */
-    border: 1px solid red; /* Граница вокруг ячеек */
-    padding: 1px;/* Поля в ячейках */ 
+    background: whitesmoke;
+    border: 1px solid red;
+    padding: 1px;
 }
 
 th{
-    background: brown; /* Цвет фона */
-    border: 1px solid red; /* Граница вокруг ячеек */
+    background: brown;
+    border: 1px solid red;
     padding: 1px;
     color: whitesmoke;
 }
@@ -111,15 +126,30 @@ li:hover{
     opacity: 1;
 }
 
-.Title{
-    margin-top: 40px;
-    margin-bottom:-5px;
-    color:firebrick;
+.Reference{
+    font-size: 32px;
+    color: #AE0202;
+    margin: 0.5 auto;
 }
 
-.Portret{
-    border-radius: 15px;
-    margin-right: 20px;
-    border: 5px solid #800000;
+.Nume_poveste{
+    font-size: 48px;
+    font-family: Times New Roman;
+    color: white;
+    margin-top: 20px;
+    
 }
 
+.nume_rezumat{
+    font-size: 32px;
+    color: #AE0202;
+    margin-top: -10px;
+}
+
+.dropdown{
+    display:none;  
+}
+    
+    
+    
+    
