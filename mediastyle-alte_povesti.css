@@ -47,6 +47,7 @@ li{
     opacity: .75;
     font-size: 12px;
     margin-left: -25px;
+    margin-top: 5px;
 }
 
 .Title{
@@ -75,7 +76,7 @@ li{
     .dropbtn {
         background-color: darkred;
         color: whitesmoke;
-        padding: 0px 35px;
+        padding: 0px 30px;
         font-size: 40px;
         border: none;
     }
