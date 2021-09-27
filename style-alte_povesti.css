@@ -1,3 +1,4 @@
+@media (min-width: 421px){
 .logo{
     width: 200px; 
     height: 50px;
@@ -86,4 +87,5 @@ li{
 
 .dropdown{
     display:none;  
+}
 }

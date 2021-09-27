@@ -1,3 +1,5 @@
+@media (min-width: 421px){
+
 .text{
     padding-left: 1%;
     padding-right: 1%;
@@ -16,16 +18,6 @@
     margin-bottom: 5px;
     border: 5px solid #800000;
     height: 430px;
-    width: 330px;
-}
-
-.image2{
-    padding-bottom: -1%;
-    border-radius: 15px;
-    margin-right: 20px;
-    margin-top: 1%;
-    border: 5px solid #800000;
-    height: 245px;
     width: 330px;
 }
 
@@ -161,6 +153,38 @@ tr .Temporal{
     font-size: 22px;
 }
 
+.slider{
+    width: 350px;
+    height: 245px;
+    border: 5px solid #800000;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.slider-line{
+    width: 1050px;
+    height: 245px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.image-line{
+    width: 350px;
+    height: 245px;
+}
+
+.container_photo{
+    display: flex;
+    background: transparent;
+}
+
+.p-slide{
+    width: 1000px;
+    margin-top: 0px;
+    margin-left: 20px;
+}
 
 
 
