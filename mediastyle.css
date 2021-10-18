@@ -185,6 +185,7 @@ li:hover{
         width: 16%;
         size: 20px; 
     }
+    
 
     .table2 th{
         background: brown;
@@ -208,6 +209,7 @@ li:hover{
     tr .simple-text{
         font-size: 12px;
     }
+    
     
 .slider{
     width: 97%;
@@ -240,6 +242,26 @@ li:hover{
     width: 100%;
     margin-top: 0px;
 }
+    .scroll_buttonInfoButton{
+        max-width: 1350px;
+        width: 100%;
+        background-color: brown;
+        color: whitesmoke;
+    }
+    
+    .scroll_buttonInfoButton:hover{
+        text-decoration: underline;
+        opacity: 1;
+        background-color:darkred;
+    }
+    
+    #InfoPers1{
+        display: none;
+    }
+    #InfoPers2{
+        display: none;
+    }
+    
 }
     
     

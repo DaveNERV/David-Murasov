@@ -186,6 +186,24 @@ tr .Temporal{
     margin-left: 20px;
 }
 
+    .scroll_buttonInfoButton{
+        max-width: 1350px;
+        width: 100%;
+        background-color: brown;
+        color: whitesmoke;
+    }
+    
+    .scroll_buttonInfoButton:hover{
+        text-decoration: underline;
+        opacity: 1;
+        background-color:darkred;
+    }
+    
+    #InfoPers{
+        display: none;
+    }
+}
+
 
 
 
