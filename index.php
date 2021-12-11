@@ -26,6 +26,10 @@
             echo '<p class="login"> ' . $_SESSION['success'] . ' </p>';
             unset($_SESSION['success']);
         }
+        if(isset($_SESSION['time'])){
+            echo '<p class="time"> ' . $_SESSION['time'] . ' </p>';
+            unset($_SESSION['time']);
+        }
     ?>
         
     <div class="text" style="background-color:whitesmoke; opacity:0.88;" align="justify">

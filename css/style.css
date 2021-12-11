@@ -160,6 +160,13 @@ tr .Temporal{
         font-size: 30px;
         display: none;
     }
+    
+    .time{
+        color: gold;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+    }
 }
 
 

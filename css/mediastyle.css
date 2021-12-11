@@ -168,6 +168,28 @@
     #InfoPers2{
         display: none;
     }
+    
+    .login{
+        color: green;
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    #login{
+        color: green;
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+        display: none;
+    }
+    
+    .time{
+        color: gold;
+        text-align: center;
+        font-weight: bold;
+        font-size: 8px;
+    }
 }
     
     

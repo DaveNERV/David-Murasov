@@ -46,7 +46,9 @@ var sent = function(e){
     let name = $('input[name="name"]').val();
     let email = $('input[name="email"]').val();
     let topic = $('input[name="tema"]').val();
-    let message = $('input[name="message"]').val();
+    let message = $('textarea[name="message"]').val();
+    
+    alert(message);
     
     let formData = new FormData();
     
