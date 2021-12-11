@@ -33,10 +33,10 @@ echo '<header class="header">
                 <div class="dropdown" style="float:right;">
                     <button class="dropbtn"><i class="fa fa-bars"></i></button>
                         <div class="dropdown-content">
-                            <a href="Personaje.html">PERSONAJE</a>
-                            <a href="Alte-povesti.html">ALTE POVEȘTI ALE AUTORULUI</a>
-                            <a href="#surse">REFERINȚE</a>
-                            <a href="Contacts.html">CONTACTE</a>
+                            <a href="personaje.php">PERSONAJE</a>
+                            <a href="alte-povesti.php">ALTE POVEȘTI ALE AUTORULUI</a>
+                            <a href="index.php#surse">REFERINȚE</a>
+                            <a href="contacts.php">CONTACTE</a>
                         </div>
                 </div>
             </div>

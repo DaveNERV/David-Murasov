@@ -26,18 +26,28 @@
     <div class="loginDiv" style="background-color:whitesmoke; opacity:0.88;" align="justify">
         <div class="log-reg-container">
             <div class="login-form">
-                <form class="form_login" action="handlers\signin.php" method="post">
+                <form class="form_login" id="login-form">
                     <p class="mainText">Login:*</p>      
-                    <p><input type="text" placeholder="Login" name="login" required></p>
+                    <p><input type="text" placeholder="Login" name="login"></p>
+                    
+                    <label class="msg-login msg"></label>
+                    
                     <p class="mainText">Parola:*</p>  
-                    <p><input type="password" placeholder="Password" name="pass" required></p>  
-                    <p><input type="submit" value="Trimite" name="SubmitLog"></p>  
+                    <p><input type="password" placeholder="Password" name="pass"></p> 
+                    
+                    <label class="msg-pass msg"></label>
+                    
+                    <p><input type="submit" class="login-btn" value="Trimite" name="SubmitLog"></p>  
+                    <p class="login-msg"></p>
                     <?php 
-                        if(isset($_SESSION["login-message"])){
-                            echo '<p class="login-msg"> ' . $_SESSION["login-message"] . ' </p>';
+                        if(isset($_SESSION["register-success"])){
+                            echo '<p class="reg-msg"> ' . $_SESSION["register-success"] . ' </p>';
+                            unset($_SESSION["register-success"]);
+                        }elseif(isset($_SESSION["logout"])){
+                            echo '<p class="out-msg"> ' . $_SESSION["logout"] . ' </p>';
+                            unset($_SESSION["logout"]);
                         }
-                        unset($_SESSION["login-message"]);
-                    ?>
+                    ?> 
                 </form> 
             </div>
             <div class="to-register">
@@ -46,6 +56,12 @@
             </div>
         </div>
     </div>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.js"></script>    
+    
+<script src="js/login-validate.js"></script>
     
 </body>
 </html>

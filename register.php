@@ -1,6 +1,5 @@
 <?php
     session_start();
-
     if(isset($_SESSION['info'])){
         header('Location: index.php');
     }
@@ -26,44 +25,39 @@
     <div class="regDiv" style="background-color:whitesmoke; opacity:0.88;" align="justify">
         <div class="register" id="reg">
             <div class="reg_container">
-                <form class="form_register" action="handlers\signup.php" method="post" enctype="multipart/form-data">
+                <form class="form_register" id="register-form">
                     <p class="pRegtext">Login:*</p>
-                    <p><input id="p1" name="log" type="text" placeholder="Login" required>
+                    <p><input id="p1" name="login" type="text" placeholder="Login">
                         
-                    <?php 
-                        if(isset($_SESSION["messageLogin"])){
-                            echo '<p class="msg"> ' . $_SESSION["messageLogin"] . ' </p>';
-                        }
-                        unset($_SESSION["messageLogin"]);
-                    ?>
-                        
+                    <label class="msg msg-login"></label>
+                    
                     <p class="pRegtext">Parola:*</p>
-                    <p><input id="p2" name="pass" type="password" placeholder="Password" required></p>
+                    <p><input id="password" name="password" type="password" placeholder="Password"></p>
+                    
+                    <label class="msg msg-password"></label>
+                    
                     <p class="pRegtext">Repetați parola:*</p>
-                    <p><input id="p3" name="passrepeat" type="password" placeholder="Repeat Password" required></p>
+                    <p><input id="p3" name="passrepeat" type="password" placeholder="Repeat Password"></p>
                     
-                    <?php 
-                        if(isset($_SESSION["messagePass2"])){
-                            echo '<p class="msg"> ' . $_SESSION["messagePass2"] . ' </p>';
-                        }
-                        unset($_SESSION["messagePass2"]);
-                    ?>
-                    
+                    <label class="msg msg-passrepeat"></label>
+
                     <p class="pRegtext">Email:*</p>
-                    <p><input id="p4" name="Email" type="text" placeholder="Email" required></p>
+                    <p><input id="p4" name="Email" type="text" placeholder="Email"></p>
                     
-                    <?php 
-                        if(isset($_SESSION["messageEmail"])){
-                            echo '<p class="msg"> ' . $_SESSION["messageEmail"] . ' </p>';
-                        }
-                        unset($_SESSION["messageEmail"]);
-                    ?>
+                    <label class="msg msg-Email"></label>
                     
-                    <input type="submit" value="Trimite" name="SubmitLog">
+                    <input type="submit" class="register-btn" value="Trimite" name="SubmitLog">
                 </form>
             </div>
         </div>
     </div>
+    
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.js"></script>  
+    
+<script src="js/register-validate.js"></script>
     
 </body>
 </html>

@@ -145,6 +145,21 @@ tr .Temporal{
         opacity: 1;
         background-color:darkred;
     }
+    
+    .login{
+        color: green;
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    
+    #login{
+        color: green;
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        display: none;
+    }
 }
 
 
